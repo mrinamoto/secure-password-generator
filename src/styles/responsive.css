@@ -1,0 +1,54 @@
+@media (max-width: 930px) {
+  .workspace { grid-template-columns:1fr; }
+  .insight-column { grid-template-columns:repeat(3,1fr); }
+  .strength-card, .privacy-card, .tips-card { min-width:0; }
+  footer { grid-template-columns:1fr; text-align:center; padding:24px 0; }
+  footer > div, .footer-status { justify-self:center; }
+  footer p { margin:0; }
+}
+
+@media (max-width: 720px) {
+  .hero { margin-top:46px; }
+  .hero h1 { font-size:clamp(39px,11vw,58px); }
+  .hero p { font-size:15px; }
+  .insight-column { grid-template-columns:1fr; }
+  .history-item { align-items:flex-start; flex-direction:column; }
+  .history-actions { width:100%; justify-content:flex-end; }
+  .security-note { grid-template-columns:1fr; }
+  .analyzer-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 520px) {
+  .site-header, main, footer { width:min(calc(100% - 22px),1180px); }
+  .site-header { min-height:66px; }
+  .brand > span:last-child { font-size:14px; }
+  .header-link { display:none; }
+  .hero { margin:36px auto 30px; }
+  .hero h1 { font-size:42px; }
+  .privacy-strip { gap:10px 14px; font-size:11px; }
+  .generator-panel, .history-panel, .analyzer-panel, .security-note { padding:16px; border-radius:18px; }
+  .strength-card, .privacy-card, .tips-card { border-radius:18px; }
+  .password-output { align-items:stretch; flex-direction:column; padding:14px; }
+  .password-output code { min-height:42px; display:flex; align-items:center; }
+  .output-actions { justify-content:flex-end; }
+  .options-grid { grid-template-columns:1fr; }
+  .split-controls { grid-template-columns:1fr; }
+  .generate-row { grid-template-columns:1fr; }
+  .generate-row select { height:44px; }
+  .panel-footer { align-items:flex-start; flex-direction:column; }
+  .history-header { align-items:flex-start; flex-direction:column; }
+  .ghost-button { width:100%; justify-content:center; }
+  .batch-header { align-items:flex-start; flex-wrap:wrap; }
+  .batch-header button { margin-left:auto; }
+  .output-actions button, .history-actions button { width:44px; height:44px; }
+  .history-meta { flex-wrap:wrap; gap:5px 9px; }
+  .output-label { align-items:flex-start; gap:8px; flex-direction:column; }
+  .secure-badge { align-self:flex-end; margin-top:-23px; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size:37px; }
+  .trust-pill { font-size:11px; }
+  .mode-switch button { font-size:12px; }
+  .generator-panel { padding:13px; }
+}
